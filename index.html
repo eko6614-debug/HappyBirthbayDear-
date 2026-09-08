@@ -57,7 +57,7 @@
   /* ---------- bloom (independent sway + soft glow) ---------- */
   .bloom {
     position: absolute;
-    bottom: 250px;
+    bottom: 240px;
     left: 50%;
     width: 220px;
     height: 220px;
@@ -269,13 +269,13 @@
     const originX = rect.left + rect.width / 2;
     const originY = rect.top + rect.height / 2;
 
-    const count = 50;
+    const count = 120;
     for (let i = 0; i < count; i++) {
       const p = document.createElement('div');
       p.className = 'pollen';
 
       const angle = Math.random() * Math.PI * 2;
-      const distance = 50 + Math.random() * 130;
+      const distance = 30 + Math.random() * 250;
       const dx = Math.cos(angle) * distance;
       const dy = Math.sin(angle) * distance - 30;
 
